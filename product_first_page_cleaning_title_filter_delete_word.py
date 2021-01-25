@@ -33,7 +33,7 @@ class ListDetailSpider(object):
         self.host_name = "企业官网"  # 网站中文名
         # self.api_url = "https://www.ofweek.com/CATList-8100-CHANGYIEXINWE-"  # 起始URL或者是基础URL，请求的链接在此基础生成
         self.mongo_client = self.get_mongo(**config)
-        self.mongo_client.admin.authenticate("data_factory", "data_factory_sjzn01")
+        self.mongo_client.admin.authenticate(".....", "....")
         self.save_coll_name = "res_kb_product"  # 需要保存的表名
         self.mongo_db = self.mongo_client[config["db"]]
         self.mongo_coll = self.mongo_db[self.save_coll_name]
