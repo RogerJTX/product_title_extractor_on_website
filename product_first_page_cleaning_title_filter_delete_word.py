@@ -26,7 +26,7 @@ import chardet
 
 class ListDetailSpider(object):
     def __init__(self, config, proj=None):
-        config["db"] = 'yyf_db'
+        config["db"] = '....'
         self.proj = proj
         # self.host = "www.ofweek.com"  # 网站域名
         # self.host2 = "solar.ofweek.com"
@@ -34,7 +34,7 @@ class ListDetailSpider(object):
         # self.api_url = "https://www.ofweek.com/CATList-8100-CHANGYIEXINWE-"  # 起始URL或者是基础URL，请求的链接在此基础生成
         self.mongo_client = self.get_mongo(**config)
         self.mongo_client.admin.authenticate(".....", "....")
-        self.save_coll_name = "res_kb_product"  # 需要保存的表名
+        self.save_coll_name = "...."  # 需要保存的表名
         self.mongo_db = self.mongo_client[config["db"]]
         self.mongo_coll = self.mongo_db[self.save_coll_name]
         self.start_down_time = datetime.datetime.now()
